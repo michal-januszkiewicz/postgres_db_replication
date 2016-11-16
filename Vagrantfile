@@ -50,6 +50,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       install -m 600 -o vagrant -g vagrant /vagrant/id_rsa /home/vagrant/.ssh/
       cat /vagrant/id_rsa.pub >> /home/vagrant/.ssh/authorized_keys
       touch /etc/.provisioned
+      wget http://pgfoundry.org/frs/download.php/3622/skytools-3.2.tar.gz
+      tar -zxvf skytools-3.2.tar.gz
+      sudo apt-get install -y postgresql libpq-dev postgresql-server-dev-all python python-dev python-pip
+      sudo apt-get install -y libpq-dev
+      sudo pip install psycopg2
+      cd skytools-3.2
+      ./configure
+      make
+      sudo make install
     fi
   SCRIPT
 
