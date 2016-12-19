@@ -9,7 +9,7 @@ N_VMS = 3
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "ubuntu/vivid32"
+  config.vm.box = "ubuntu/trusty32"
   # use a minimal amount of RAM for each node to avoid overwhelming the host
   config.vm.provider "virtualbox" do |v|
     v.memory = 256
@@ -59,6 +59,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       ./configure
       make
       sudo make install
+      sh /vagrant/script.sh
     fi
   SCRIPT
 

@@ -1,0 +1,66 @@
+2016-12-16 00:38:34,674 12155 ERROR Job slave crashed: could not connect to server: Connection refused
+	Is the server running on host "192.168.0.102" and accepting
+	TCP/IP connections on port 5432?
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 579, in run_func_safely
+    r = func()
+  File "/usr/local/lib/python2.7/dist-packages/skytools/adminscript.py", line 62, in work
+    fn(*cmdargs)
+  File "/usr/local/lib/python2.7/dist-packages/pgq/cascade/admin.py", line 150, in cmd_create_branch
+    return self.create_node('branch', args)
+  File "/usr/local/lib/python2.7/dist-packages/pgq/cascade/admin.py", line 195, in create_node
+    db = self.get_database(self.initial_db_name)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 788, in get_database
+    return dbc.get_connection(params['isolation_level'], clist)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 1051, in get_connection
+    self.conn = skytools.connect_database(self.loc)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/psycopgwrapper.py", line 135, in connect_database
+    db = _CompatConnection(connstr)
+OperationalError: could not connect to server: Connection refused
+	Is the server running on host "192.168.0.102" and accepting
+	TCP/IP connections on port 5432?
+
+2016-12-16 02:39:35,880 13191 ERROR Job slave crashed: could not connect to server: Connection refused
+	Is the server running on host "192.168.0.102" and accepting
+	TCP/IP connections on port 5432?
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 579, in run_func_safely
+    r = func()
+  File "/usr/local/lib/python2.7/dist-packages/skytools/adminscript.py", line 62, in work
+    fn(*cmdargs)
+  File "/usr/local/lib/python2.7/dist-packages/pgq/cascade/admin.py", line 150, in cmd_create_branch
+    return self.create_node('branch', args)
+  File "/usr/local/lib/python2.7/dist-packages/pgq/cascade/admin.py", line 195, in create_node
+    db = self.get_database(self.initial_db_name)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 788, in get_database
+    return dbc.get_connection(params['isolation_level'], clist)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 1051, in get_connection
+    self.conn = skytools.connect_database(self.loc)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/psycopgwrapper.py", line 135, in connect_database
+    db = _CompatConnection(connstr)
+OperationalError: could not connect to server: Connection refused
+	Is the server running on host "192.168.0.102" and accepting
+	TCP/IP connections on port 5432?
+
+2016-12-16 02:40:15,555 13239 ERROR Job slave crashed: could not connect to server: Connection refused
+	Is the server running on host "192.168.0.102" and accepting
+	TCP/IP connections on port 5432?
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 579, in run_func_safely
+    r = func()
+  File "/usr/local/lib/python2.7/dist-packages/skytools/adminscript.py", line 62, in work
+    fn(*cmdargs)
+  File "/usr/local/lib/python2.7/dist-packages/pgq/cascade/admin.py", line 150, in cmd_create_branch
+    return self.create_node('branch', args)
+  File "/usr/local/lib/python2.7/dist-packages/pgq/cascade/admin.py", line 195, in create_node
+    db = self.get_database(self.initial_db_name)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 788, in get_database
+    return dbc.get_connection(params['isolation_level'], clist)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/scripting.py", line 1051, in get_connection
+    self.conn = skytools.connect_database(self.loc)
+  File "/usr/local/lib/python2.7/dist-packages/skytools/psycopgwrapper.py", line 135, in connect_database
+    db = _CompatConnection(connstr)
+OperationalError: could not connect to server: Connection refused
+	Is the server running on host "192.168.0.102" and accepting
+	TCP/IP connections on port 5432?
+
