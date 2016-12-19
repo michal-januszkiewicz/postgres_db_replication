@@ -1,3 +1,14 @@
+bash skytools-3.2/londiste-config/master.sh
+
+bash skytools-3.2/londiste-config/slave1.sh
+
+bash skytools-3.2/londiste-config/slave2.sh
+
+sudo -u postgres psql postgres
+# \c testdb
+
+
+-------------------
 cd skytools-3.2/londiste-config/
 sudo chmod 777 log/
 sudo chmod 777 pid
